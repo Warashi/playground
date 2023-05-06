@@ -16,8 +16,8 @@ jobs:
         run: |
           cd ./gotestsum
           go test -json ./... 2>&1 | go run github.com/jstemmer/go-junit-report/v2@latest -parser gojson > unit-test.xml
-      - name: Publish Test Results
-        uses: EnricoMi/publish-unit-test-result-action@v2.7.0
+      - name: JUnit Report Action
+        uses: mikepenz/action-junit-report@v3.7.6
         if: always()
         with:
-          files: ./gotestsum/unit-test.xml
+          report_paths: ./gotestsum/unit-test.xml
