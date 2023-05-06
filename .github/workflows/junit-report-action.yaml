@@ -1,4 +1,4 @@
-name: "gotestsum"
+name: "junit-report-action"
 on:
   pull_request: {}
 
