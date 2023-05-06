@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1">
+	<testsuite name="github.com/Warashi/playground/gotestsum/a/b/c" tests="1" failures="1" errors="0" id="0" hostname="workbench" time="0.021" timestamp="2023-05-06T12:45:47+09:00">
+		<testcase name="TestFail" classname="github.com/Warashi/playground/gotestsum/a/b/c" time="0.000">
+			<failure message="Failed"><![CDATA[    gotestsum/a/b/c/c_test.go:6: some logs: fail
+    gotestsum/a/b/c/c_test.go:7: test]]></failure>
+		</testcase>
+	</testsuite>
+</testsuites>
