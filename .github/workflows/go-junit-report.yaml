@@ -1,4 +1,4 @@
-name: "gotestsum"
+name: "go-junit-report"
 on:
   pull_request: {}
 
