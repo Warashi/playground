@@ -1,0 +1,14 @@
+name: "gotestsum"
+on:
+  pull_request: {}
+
+jobs:
+  gotestsum:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: JUnit Report Action
+        uses: mikepenz/action-junit-report@v3.7.6
+        with:
+          report_paths: ./junit-report-action/unit-test.xml
