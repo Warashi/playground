@@ -18,5 +18,6 @@ jobs:
           go run gotest.tools/gotestsum@latest --junitfile unit-test.xml
       - name: Publish Test Results
         uses: EnricoMi/publish-unit-test-result-action@v2.7.0
+        if: always()
         with:
           files: ./gotestsum/unit-test.xml
