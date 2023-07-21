@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+
+[project]
+name = "denops-issue268"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Warashi", email = "6warashi9@gmail.com" }]
+urls = { repository = "https://github.com/Warashi/playground/tree/main/denops-issue268" }
+
+dynamic = ["version"]
+requires-python = ">=3.10"
+
+dependencies = ["pynvim", "greenletio"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+dev = ["black", "ruff", "mypy"]
+
+[tool.ruff]
+select = [
+  "E",  # pycodestyle
+  "F",  # pyflakes
+  "UP", # pyupgrade
+]
+
