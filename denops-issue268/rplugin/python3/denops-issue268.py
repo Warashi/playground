@@ -21,14 +21,6 @@ class DenopsIssue268(object):
             self.echo("6"),
             self.echo("7"),
             self.echo("8"),
-                # asyncio.to_thread(self.echo, "1"),
-                # asyncio.to_thread(self.echo, "2"),
-                # asyncio.to_thread(self.echo, "3"),
-                # asyncio.to_thread(self.echo, "4"),
-                # asyncio.to_thread(self.echo, "5"),
-                # asyncio.to_thread(self.echo, "6"),
-                # asyncio.to_thread(self.echo, "7"),
-                # asyncio.to_thread(self.echo, "8"),
         )
 
     async def echo(self, msg):
